@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <header class="title" >BlackJack</header>
+
+    <div class="row mt-2" >
+        <div class="col text-center" >
+            <button id="btnNew" class="btn btn-danger" >New game</button>
+            <button id="btnAsk" disabled="disabled" class="btn btn-primary" >Ask for a letter</button>
+            <button id="btnStop" disabled class="btn btn-primary" >Stop</button>
+        </div> 
+    </div>
+
+    <div class="row container mt-4">
+        <div class="col">
+            <h1>
+                Player 1 - <small>0</small>
+            </h1>
+            <div style="display: flex" id="playerCards" class="divCards" >
+                <!-- <img class="card" src="assets/cartas/10C.png" alt="" class="src"> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="row container mt-4">
+        <div class="col">
+            <h1>
+                Computer 1 - <small>0</small>
+            </h1>
+            <div style="display: flex" id="computerCards" class="divCards" >
+                <!-- <img class="card" src="assets/cartas/10C.png" alt="" class="src"> -->
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/game.js" ></script>
+</body>
+</html>
